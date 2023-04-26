@@ -1,3 +1,4 @@
 # headless-windows
-This project provides an example on how to install and setup Twingate headless client on the GitHub Windows runner.
+This repository demonstrates how to script a Windows-based headless Twingate client.
 
+Specifically, this example shows how to use Twingate with a Windows runner via GitHub actions. 
