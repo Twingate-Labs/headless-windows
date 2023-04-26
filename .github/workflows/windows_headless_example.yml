@@ -11,6 +11,7 @@ jobs:
           Invoke-WebRequest https://api.twingate.com/download/windows?installer=msi -OutFile .\twingate_client.msi
           Set-Content .\service_key.json '${{ secrets.SERVICE_KEY }}'
           .\twingate_client.msi service_secret=.\service_key.json /qn
+          Start-Sleep -Seconds 10
           Start-Service twingate.service
           Start-Sleep -Seconds 10
           Get-Service twingate.service
